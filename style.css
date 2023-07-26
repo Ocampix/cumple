@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0b1522; 
+}
+section {
+    width:100vh;
+    height: 100%;
+    border: 1px solid black;
+    background-color: #0b1522;
+}
+.contenedor_corazon {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    position:fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background: linear-gradient(#000000,#17202deb,#17202daa,#17202d55);
+    box-shadow: 2px 0 10px #17202d55;
+}
+.cora {
+    width: 80px;
+    height: 80px;
+    background: red;
+    position: relative;
+    top: -50px;
+    transform: rotate(45deg);
+    box-shadow: -20px 20px 150px #f20044;
+    animation: palpito 0.5s linear infinite alternate;
+    z-index: 1;
+}
+@keyframes palpito {
+    0%{
+        transform: rotate(45deg) scale(1.10);
+    }
+    80%{
+        transform: rotate(45deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(45deg) scale(0.8);
+    }
+}
+.cora::before {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    box-shadow: 20px 20px 150px #f20044;
+    border-radius: 50%;
+    right: 50%;
+}
+.cora::after {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    box-shadow: 20px 20px 150px #f20044;
+    border-radius: 50%;
+    top: -50%;
+}
+nav .name h1 {
+    text-shadow: 2px 2px #ff007f, 3px 3px #ff033e;
+    display: flex;
+    position: fixed;
+    top: 200px;
+    justify-content: center;
+    text-align: center;
+    font-family: cursive;
+    color: #fefefe;
+    z-index: 1;
+    animation: yur 7s ease infinite;
+}
+@keyframes yur {
+    0%{
+        text-shadow: 2px 2px #ff007f, 3px 3px #ff033e;
+    }
+    25%{
+        text-shadow: 2px 2px #a200ff, 3px 3px #ff03c0;
+    }
+    50%{
+        text-shadow: 2px 2px #00f2ff, 3px 3px #0357ff;
+    }
+    75%{
+        text-shadow: 2px 2px #ffd500, 3px 3px #74ff03;
+    }
+    100%{
+        text-shadow: 2px 2px #ff007f, 3px 3px #ff033e;
+    }
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor{
+    display: block;
+    position:absolute;
+    top:300px;
+    left: 40px;  
+    justify-content: center;
+    align-items: center;
+}
+.contenedor img {
+    display: block;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 1px 0 20px #ff416d;
+    animation: yurr 7s ease infinite;
+}
+.img{
+
+    margin: 20px 0;
+}
+p {
+    border: 1px solid #fefefe2e;
+    display: flex;
+    position: relative;
+    color: #fefefe;
+    margin: 5px 0;
+    left: -20px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 1px 0 20px #d341ff;
+    animation: yurr 7s ease infinite;
+}
+@keyframes yurr {
+    0%{
+        box-shadow: 1px 0 20px #d341ff;
+    }
+    25%{
+        box-shadow: 1px 0 20px #ff03c0;
+    }
+    50%{
+        box-shadow: 1px 0 20px#00f2ff;
+    }
+    75%{
+        box-shadow: 1px 0 20px #74ff03;
+    }
+    100%{
+        box-shadow: 1px 0 20px #ff033e;
+    }
+}
+
+#nafor{
+    height: 360px;
+}
+#yo{
+    height: 290px;
+}
+#todos{
+    height: 290px;
+}
